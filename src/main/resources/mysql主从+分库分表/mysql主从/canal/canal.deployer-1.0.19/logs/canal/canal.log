@@ -1,0 +1,15 @@
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option PermSize=96m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: UseCMSCompactAtFullCollection is deprecated and will likely be removed in a future release.
+2021-09-06 14:29:24.598 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## start the canal server.
+2021-09-06 14:29:24.676 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[127.0.0.1:11111]
+2021-09-06 14:29:25.091 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## the canal server is running now ......
+2021-09-06 15:24:55.906 [Thread-3] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## stop the canal server
+2021-09-06 15:24:56.730 [Thread-3] INFO  com.alibaba.otter.canal.deployer.CanalController - ## stop the canal server[127.0.0.1:11111]
+2021-09-06 15:24:56.730 [Thread-3] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## canal server is down.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option PermSize=96m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: UseCMSCompactAtFullCollection is deprecated and will likely be removed in a future release.
+2021-09-06 15:26:21.032 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## start the canal server.
+2021-09-06 15:26:21.117 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[127.0.0.1:11111]
+2021-09-06 15:26:21.638 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## the canal server is running now ......
