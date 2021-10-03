@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+        select  执行的SQL语句的类型
+            id  XxxDao中抽象方法的名字
+ parameterType 方法的参数类型
+-->
+<mapper namespace="com.qf.dao.PeopleDao">
+    <!--    public int insertEmployeeGenId02();-->
+    <insert id="insertPeopleGenId02" parameterType="com.qf.pojo.People">
+        <selectKey order="BEFORE" keyProperty="id" resultType="string">
+            SELECT REPLACE(UUID(),'-','')
+        </selectKey>
+        	INSERT INTO people(people.id,people.username,people.age,people.gender,people.addr,people.info) VALUES (#{id},#{username},#{age},#{gender},#{addr},#{info});
+    </insert>
+</mapper>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--    springIOC容器  -->
+    <context:component-scan base-package="com.qf.progress,com.qf.progress.dao,com.qf.progress.service.impl,com.qf.progress.controller"></context:component-scan>
+
+    <context:annotation-config />
+    <!--        导入配置文件-->
+    <context:property-placeholder location="classpath*:jdbc.properties"/>
+    <!--    导入数据库连接数据-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxActive" value="${jdbc.maxActive}"/>
+        <property name="minIdle" value="${jdbc.minIdle}"/>
+        <property name="maxWait" value="${jdbc.maxWait}"/>
+    </bean>
+
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--       数据库，数据源-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--       mapper的映射文件-->
+<!--        <property name="mapperLocations" value="classpath*:*Dao.xml"/>-->
+        <!--      通配-->
+        <property name="typeAliasesPackage" value="com.qf.java2103.ssm.pojo"/>
+        <!--        插件，数组-->
+        <property name="plugins">
+            <array>
+               <!-- &lt;!&ndash;                分页插件&ndash;&gt;
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        &lt;!&ndash;使用下面的方式配置参数，一行配置一个 &ndash;&gt;
+                        <value>
+                            helperDialect=mysql
+                            reasonable=true
+                        </value>
+                    </property>
+                </bean>-->
+            </array>
+        </property>
+    </bean>
+
+
+    <!--    配置mapper文件 容器基础包-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.qf.progress.dao"></property>
+    </bean>
+
+<!--    <context:component-scan base-package="com"/>-->
+
+    <!-- 1. 引入一个事务管理器，其中依赖DataSource,借以获得连接，进而控制事务逻辑 -->
+    <bean id="tx" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" ></property>
+    </bean>
+    <!--        事务注解驱动-->
+    <tx:annotation-driven transaction-manager="tx"></tx:annotation-driven>
+
+    <!-- 调用cglib查询对象   -->
+    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+
+</beans>

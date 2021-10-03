@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!--<script type="text/javascript" src="http://localhost:8080/js/jquery-3.6.0.min.js"></script>-->
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--    　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
+</head>
+<body>
+    <button type="button"  onclick="getAllUser()">获取所有用户</button>
+    <button type="button"  onclick="getUserById()">通过id获取用户</button>
+    <input type="hidden" id="ipt01" value="1">
+</body>
+</html>
+<script type="text/javascript">
+
+    function getAllUser() {
+        $.ajax({ url:"http://localhost:8080/day64/rest/users",
+            type:'get',
+            contentType:"application/json",//声明请求参数类型为json
+            success:function (ret) {
+                console.log(ret)
+            }
+            })
+    }
+    function getUserById() {
+
+        var id = $("#ipt01").val()
+        $.ajax({ url:"http://localhost:8080/day64/rest/users/"+id,
+            type:'get',
+            contentType:"application/json",//声明请求参数类型为json
+            success:function (ret) {
+                console.log(ret)
+                var oldtime= ret.registerTime
+                var newtime = new Date(oldtime)
+                alert("id="+ret.id+" username="+ret.username+" password="+ret.password+" registerTime="+newtime)
+            }
+        })
+    }
+
+
+</script>

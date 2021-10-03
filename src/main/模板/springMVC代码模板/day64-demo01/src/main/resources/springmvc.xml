@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--  扫描路径  -->
+    <context:component-scan base-package="com"></context:component-scan>
+    <!--  mvc驱动  -->
+    <mvc:annotation-driven></mvc:annotation-driven>
+
+  <!--  &lt;!&ndash; 解决传递json格式时，中文乱码问题 &ndash;&gt;
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            &lt;!&ndash; 启动Spring MVC的注解功能，完成请求和注解POJO的映射 注解请求映射
+            默认是ISO-88859-1，避免乱码这里设置为UTF-8 &ndash;&gt;
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes" value="text/html;charset=UTF-8" />
+            </bean>
+            &lt;!&ndash; 启动JSON格式的配置,自动将格式转换成JSON格式，不需要其他类 &ndash;&gt;
+            <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="supportedMediaTypes" value="application/json;charset=UTF-8" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>-->
+
+    <mvc:annotation-driven>
+        <!-- 安装FastJson,转换器 -->
+        <mvc:message-converters>
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <!-- 声明转换类型:json -->
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!--
+            声明异常解析器
+            自动执行，连id都不用配置
+            只需要放在配置文件中
+    -->
+    <bean class="com.qf.resolver.MyExpectionResolver"></bean>
+
+    <!-- 视图解析器
+    作用：1.捕获后端控制器的返回值="index"
+      2.解析： 在返回值的前后 拼接 ==> "/index.jsp"
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 前缀 -->
+        <property name="prefix" value="/"></property>
+        <!-- 后缀 -->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+    <!-- 额外的增加一个handle   -->
+<!--        <mvc:default-servlet-handler/>-->
+    <!--  mapping映射：请求路径  location 具体位置 -->
+    <mvc:resources mapping="/html/**" location="/html/"></mvc:resources>
+    <mvc:resources mapping="/css/**" location="/css/"></mvc:resources>
+    <mvc:resources mapping="/js/**" location="/js/"></mvc:resources>
+
+    <!-- 检测是否登录拦截器配置   -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/inter02/index"/>
+            <mvc:mapping path="/inter02/menu"/>
+            <mvc:mapping path="/inter02/info"/>
+    <!--            <mvc:mapping path="/inter/test*"/> -->  <!--test开头-->
+    <!--            <mvc:mapping path="/inter/**"/>  -->    <!--任意多级任意路径-->
+    <!--            <mvc:exclude-mapping path="/inter/**"/>   -->   <!--不拦截此路径-->
+<!--            拦截器路径-->
+            <bean class="com.qf.interceptor.MyLoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/upload03/up01"/>
+            <!--            拦截器路径-->
+            <bean class="com.qf.interceptor.MyFileUploadInterceptor">
+                <property name="maxSize" value="1024000"></property>
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!-- 上传文件配置   -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<!--            <property name="maxUploadSize" value="1024000"></property>-->
+    </bean>
+    <!--
+          额外的增加一个handler，且其requestMapping:  "/**" 可以匹配所有请求，但是优先级最低
+          所以如果其他所有的handler都匹配不上，请求会转向 "/**" ,恰好，这个handler就是处理静态资源的
+          处理方式：将请求转会到tomcat中名为default的Servlet
+        -->
+    <mvc:default-servlet-handler/>
+
+
+
+
+</beans>

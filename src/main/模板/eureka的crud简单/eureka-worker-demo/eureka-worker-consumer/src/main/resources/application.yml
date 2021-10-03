@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: worker-consumer
+server:
+  port: 8883
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8881/eureka/
+
+

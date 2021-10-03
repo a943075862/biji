@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: hello-spring-cloud-eureka
+
+server:
+  port: 8881
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 表示自己是一个注册中心，不是客户端
+    registerWithEureka: false
+    # 不进行集群注册，目前是一个单节点
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+

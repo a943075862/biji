@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="day64-demo01:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>day64-demo01</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="day64-demo01-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="day64-demo01:war exploded" />
+    </root>
+  </artifact>
+</component>

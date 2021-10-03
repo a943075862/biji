@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.java2102.ssm.mapper.IDepartmentMapper">
+
+    <resultMap id="BaseResultMap" type="Department">
+        <id column="id" property="id"/>
+        <result column="dept_name" property="deptName"/>
+    </resultMap>
+
+    <!-- List<Department> findAll(); -->
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT id, dept_name FROM t_department
+    </select>
+
+</mapper>

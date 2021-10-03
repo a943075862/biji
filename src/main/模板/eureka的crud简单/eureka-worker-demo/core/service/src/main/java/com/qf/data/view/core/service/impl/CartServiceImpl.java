@@ -1,0 +1,8 @@
+package com.qf.data.view.core.service.impl;
+
+
+
+public class CartServiceImpl implements viewService {
+
+    //插入数据：Mapper  注入view-core-dal里的viewMapper,通过Mapper来插入数据
+}

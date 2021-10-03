@@ -1,0 +1,42 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.EmployeeDao">
+    <!--    public int insertEmployee(Employee employee);-->
+    <insert id="insertEmployee" parameterType="com.qf.pojo.Employee">
+        INSERT INTO employee (employee.username,employee.`password`,employee.info) values (#{username},#{password},#{info})
+    </insert>
+    <!--        public int deleteEmployee(int id);-->
+    <delete id="deleteEmployee" parameterType="int">
+        delete from employee where id=#{id}
+    </delete>
+    <!--        public int updateEmployee(Employee employee);-->
+    <update id="updateEmployee" parameterType="com.qf.pojo.Employee" >
+       UPDATE employee SET employee.username=#{username},employee.`password`=#{password},employee.info=#{info} WHERE employee.id=#{id}
+    </update>
+    <select id="showEmployeeById" parameterType="int" resultType="com.qf.pojo.Employee">
+        SELECT employee.id id,employee.username username,employee.`password` password,employee.info info FROM employee WHERE employee.id = #{id}
+    </select>
+    <!--     public List<Employee> showAllEmployee();-->
+    <select id="showAllEmployee" resultType="com.qf.pojo.Employee">
+         SELECT employee.id id,employee.username username,employee.`password` password,employee.info info FROM employee
+    </select>
+    <!--    public List<Employee> showEmployeeByUsername(String username);-->
+    <select id="showEmployeeByUsername" resultType="com.qf.pojo.Employee">
+         SELECT employee.id id,employee.username username,employee.`password` password,employee.info info FROM employee WHERE employee.username like concat('%',#{username},'%')
+    </select>
+    <!--    public Employee insertEmployeeGenId01(Employee employee);-->
+    <insert id="insertEmployeeGenId01" parameterType="com.qf.pojo.Employee" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO employee (employee.username,employee.`password`,employee.info) values (#{username},#{password},#{info})
+
+    </insert>
+    <!--    public Employee insertEmployeeGenId02(Employee employee);-->
+    <insert id="insertEmployeeGenId02" parameterType="com.qf.pojo.Employee" >
+            <selectKey order="AFTER" keyProperty="id" resultType="int">
+                SELECT LAST_INSERT_ID()
+            </selectKey>
+        INSERT INTO employee (employee.username,employee.`password`,employee.info) values (#{username},#{password},#{info})
+
+    </insert>
+
+</mapper>

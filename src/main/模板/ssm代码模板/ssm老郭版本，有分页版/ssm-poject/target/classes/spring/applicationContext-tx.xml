@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+        <!--        <import resource="applicationContext-mapper.xml" ></import>-->
+            <context:component-scan base-package="com.qf.java2103.ssm"/>
+
+
+        <!-- 1. 引入一个事务管理器，其中依赖DataSource,借以获得连接，进而控制事务逻辑 -->
+        <bean id="tx" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+               <property name="dataSource" ref="dataSource" ></property>
+        </bean>
+
+<!--        事务注解驱动-->
+        <tx:annotation-driven transaction-manager="tx"></tx:annotation-driven>
+
+
+    <!--  事务通知 -->
+    <tx:advice id="txManager" transaction-manager="tx">
+        <tx:attributes>
+            <tx:method name="*" />
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config >
+        <aop:pointcut id="pt" expression="execution(public * com.qf.java2103.ssm.service.impl.IEmployeeServiceImpl.*(..))"/>
+        <aop:advisor advice-ref="txManager" pointcut-ref="pt"></aop:advisor>
+    </aop:config>
+
+        <!--    调用cglib处理类对象   *ServiceImpl与*Service区别-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+
+</beans>

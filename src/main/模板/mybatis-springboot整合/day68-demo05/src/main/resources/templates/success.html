@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>success.html</title>
+</head>
+<body>
+    Hello <span th:text="${user}">lucy</span>
+    Hello <span th:text="|欢迎:${user}|">lucy</span>
+    Hello <span th:text="欢迎+${user}">lucy</span>
+    <hr>
+    <!--if-->
+    <span th:if="${age>16}">已经成年</span>
+    <!-- else   -->
+    <span th:unless="${age>16}">还未成年</span>
+    <hr>
+    <div th:text="${age>16?'a':'b'}"></div>
+    <hr>
+    <div th:utext="${msg}"></div>
+    <hr>
+    <div th:text="${#dates.format(now,'yyyy-MM-dd')}"></div>
+    <button onclick="show()">查看</button>
+    <hr>
+
+
+    <script th:inline="javascript">
+        function show() {
+            console.log([[${now}]])
+        }
+    </script>
+</body>
+</html>

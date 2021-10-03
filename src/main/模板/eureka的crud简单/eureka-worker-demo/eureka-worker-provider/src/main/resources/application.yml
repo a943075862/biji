@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: worker-provider
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test01?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  port: 8882
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8881/eureka/
+
+# 指明mapper映射文件的位置
+mybatis:
+  mapper-locations: classpath:META-INF/mapper/*.xml
+
+
+

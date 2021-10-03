@@ -1,0 +1,621 @@
+2021-07-09 09:48:46,051 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 09:48:46,224 DEBUG XmlBeanDefinitionReader:395 - Loaded 1 bean definitions from class path resource [applicationContext.xml]
+2021-07-09 09:48:46,260 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 09:48:46,303 DEBUG ClassPathXmlApplicationContext:1002 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292, started on Fri Jul 09 09:48:46 CST 2021
+2021-07-09 09:49:46,421 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 09:49:46,569 DEBUG XmlBeanDefinitionReader:395 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+2021-07-09 09:49:46,599 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 09:49:46,613 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 09:49:46,631 DEBUG ClassPathXmlApplicationContext:1002 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292, started on Fri Jul 09 09:49:46 CST 2021
+2021-07-09 09:50:46,286 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 09:50:46,461 DEBUG XmlBeanDefinitionReader:395 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+2021-07-09 09:50:46,490 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 09:50:46,506 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 09:50:46,561 DEBUG ClassPathXmlApplicationContext:1002 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292, started on Fri Jul 09 09:50:46 CST 2021
+2021-07-09 09:53:38,700 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11c20519
+2021-07-09 09:53:38,911 DEBUG XmlBeanDefinitionReader:395 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+2021-07-09 09:53:38,943 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 09:53:38,974 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 09:54:42,544 DEBUG ClassPathXmlApplicationContext:1002 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@11c20519, started on Fri Jul 09 09:53:38 CST 2021
+2021-07-09 09:54:48,222 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 09:54:48,399 DEBUG XmlBeanDefinitionReader:395 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+2021-07-09 09:54:48,424 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 09:54:48,441 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 09:54:48,488 DEBUG ClassPathXmlApplicationContext:1002 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292, started on Fri Jul 09 09:54:48 CST 2021
+2021-07-09 09:55:58,514 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 09:55:58,670 DEBUG XmlBeanDefinitionReader:395 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+2021-07-09 09:55:58,706 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 09:55:58,726 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 09:55:58,757  WARN ClassPathXmlApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'user' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.beans.factory.support.BeanDefinitionValidationException: Could not find an init method named 'init' on bean with name 'user'
+2021-07-09 10:12:15,713 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:12:15,742 DEBUG PooledDataSource:353 - PooledDataSource forcefully closed/removed all connections.
+2021-07-09 10:12:15,742 DEBUG PooledDataSource:353 - PooledDataSource forcefully closed/removed all connections.
+2021-07-09 10:12:15,742 DEBUG PooledDataSource:353 - PooledDataSource forcefully closed/removed all connections.
+2021-07-09 10:12:15,743 DEBUG PooledDataSource:353 - PooledDataSource forcefully closed/removed all connections.
+2021-07-09 10:12:15,819 DEBUG JdbcTransaction:136 - Opening JDBC Connection
+2021-07-09 10:12:16,089 DEBUG PooledDataSource:424 - Created connection 107456312.
+2021-07-09 10:12:16,089 DEBUG JdbcTransaction:100 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@667a738]
+2021-07-09 10:12:16,095 DEBUG selectUsers:143 - ==>  Preparing: select * from user 
+2021-07-09 10:12:16,121 DEBUG selectUsers:143 - ==> Parameters: 
+2021-07-09 10:12:16,159 DEBUG selectUsers:143 - <==      Total: 28
+2021-07-09 10:15:38,920 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:15:39,120 DEBUG XmlBeanDefinitionReader:395 - Loaded 5 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:15:39,164 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:15:39,209 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:15:39,209 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:15:39,210 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:15:39,210 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:15:39,212 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:15:39,215 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:15:39,223 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:15:39,292 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:15:39,297 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:15:39,312 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:15:39,479 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:16:39,953 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:16:40,186 DEBUG XmlBeanDefinitionReader:395 - Loaded 6 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:16:40,233 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:16:40,317 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:16:40,320 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:16:40,322 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:16:40,339 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:16:40,368 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:16:40,387 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:16:40,387 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:16:40,387 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:16:40,388 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:16:40,389 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:16:40,390 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:16:40,392 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:16:40,393 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:16:40,399 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:16:40,414 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:16:40,422 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:16:40,506 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:16:40,517 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:16:40,532 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:16:40,586 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:16:40,588 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:16:40,781 DEBUG DataSourceUtils:114 - Fetching JDBC Connection from DataSource
+2021-07-09 10:16:40,993  INFO DruidDataSource:930 - {dataSource-1} inited
+2021-07-09 10:16:41,344 DEBUG SpringManagedTransaction:87 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6340e5f0] will not be managed by Spring
+2021-07-09 10:16:41,356 DEBUG selectUsers:143 - ==>  Preparing: select * from user 
+2021-07-09 10:16:41,391 DEBUG selectUsers:143 - ==> Parameters: 
+2021-07-09 10:16:41,412 DEBUG selectUsers:143 - <==      Total: 28
+2021-07-09 10:23:51,990 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:23:52,211 DEBUG XmlBeanDefinitionReader:395 - Loaded 7 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:23:52,250 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:23:52,356 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:23:52,362 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:23:52,364 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:23:52,376 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:23:52,409 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:23:52,424 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:23:52,424 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:23:52,425 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:23:52,425 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:23:52,428 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:23:52,431 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:23:52,435 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:23:52,438 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:23:52,449 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 10:23:52,485 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:23:52,493 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:23:52,501 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:23:52,572 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:23:52,584 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:23:52,597 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:23:52,658 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:23:52,660 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:24:21,859 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:24:22,040 DEBUG XmlBeanDefinitionReader:395 - Loaded 7 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:24:22,070 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:24:22,152 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:24:22,157 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:24:22,159 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:24:22,170 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:24:22,197 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:24:22,207 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:24:22,207 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:24:22,208 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:24:22,208 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:24:22,209 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:24:22,210 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:24:22,212 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:24:22,213 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:24:22,217 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 10:24:22,259 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:24:22,267 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:24:22,277 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:24:22,351 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:24:22,360 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:24:22,372 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:24:22,442 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:24:22,446 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:25:20,470 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:25:20,714 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\service\impl\UserServiceImpl.class]
+2021-07-09 10:25:20,737 DEBUG XmlBeanDefinitionReader:395 - Loaded 13 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:25:20,766 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:25:20,816 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:25:20,875 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:25:20,879 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:25:20,881 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:25:20,891 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:25:20,906 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:25:20,907 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:25:20,907 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:25:20,908 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:25:20,909 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:25:20,911 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:25:20,914 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:25:20,918 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:25:20,922 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 10:25:20,978 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:25:20,995 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:25:21,009 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userServiceImpl'
+2021-07-09 10:25:21,041 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:25:21,053 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:25:21,064 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:25:21,067 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:25:21,157 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:25:21,206 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:25:21,396 DEBUG SqlSessionUtils:97 - Creating a new SqlSession
+2021-07-09 10:25:21,401 DEBUG SqlSessionUtils:148 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@117159c0] was not registered for synchronization because synchronization is not active
+2021-07-09 10:25:21,411 DEBUG DataSourceUtils:114 - Fetching JDBC Connection from DataSource
+2021-07-09 10:25:21,534  INFO DruidDataSource:930 - {dataSource-1} inited
+2021-07-09 10:25:21,822 DEBUG SpringManagedTransaction:87 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@782859e] will not be managed by Spring
+2021-07-09 10:25:21,842 DEBUG selectUsers:143 - ==>  Preparing: select * from user 
+2021-07-09 10:25:21,874 DEBUG selectUsers:143 - ==> Parameters: 
+2021-07-09 10:25:21,893 DEBUG selectUsers:143 - <==      Total: 28
+2021-07-09 10:25:21,893 DEBUG SqlSessionUtils:191 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@117159c0]
+2021-07-09 10:49:27,422 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:49:27,682 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\service\impl\UserServiceImpl.class]
+2021-07-09 10:49:27,701 DEBUG XmlBeanDefinitionReader:395 - Loaded 13 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:49:27,732 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:49:27,783 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:49:27,808 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:49:27,809 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:49:27,812 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:49:27,824 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:49:27,840 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:27,840 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:27,841 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:27,841 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:27,842 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:49:27,843 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:49:27,846 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:49:27,848 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:49:27,851 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 10:49:27,885 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:49:27,898 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:49:27,908 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userServiceImpl'
+2021-07-09 10:49:27,932 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:49:27,943 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:49:27,955 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:49:27,957 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:49:28,204 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:49:28,275 DEBUG SqlSessionFactoryBean:455 - Registered plugin: 'com.github.pagehelper.PageInterceptor@672872e1'
+2021-07-09 10:49:28,276 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:49:28,451 DEBUG SqlSessionUtils:97 - Creating a new SqlSession
+2021-07-09 10:49:28,459 DEBUG SqlSessionUtils:148 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@723ca036] was not registered for synchronization because synchronization is not active
+2021-07-09 10:49:28,468 DEBUG DataSourceUtils:114 - Fetching JDBC Connection from DataSource
+2021-07-09 10:49:28,609  INFO DruidDataSource:930 - {dataSource-1} inited
+2021-07-09 10:49:28,862 DEBUG SpringManagedTransaction:87 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f2cfe3f] will not be managed by Spring
+2021-07-09 10:49:28,872 DEBUG selectUsers:143 - ==>  Preparing: select * from user 
+2021-07-09 10:49:28,896 DEBUG selectUsers:143 - ==> Parameters: 
+2021-07-09 10:49:28,917 DEBUG selectUsers:143 - <==      Total: 28
+2021-07-09 10:49:28,919 DEBUG SqlSessionUtils:191 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@723ca036]
+2021-07-09 10:49:53,936 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:49:54,173 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\service\impl\UserServiceImpl.class]
+2021-07-09 10:49:54,196 DEBUG XmlBeanDefinitionReader:395 - Loaded 13 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:49:54,227 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:49:54,274 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:49:54,297 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:49:54,298 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:49:54,299 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:49:54,304 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:49:54,324 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:54,324 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:54,325 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:54,325 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:49:54,326 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:49:54,327 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:49:54,329 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:49:54,332 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:49:54,335 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 10:49:54,366 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:49:54,379 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:49:54,389 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userServiceImpl'
+2021-07-09 10:49:54,420 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:49:54,431 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:49:54,444 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:49:54,446 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:49:54,582 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:49:54,647 DEBUG SqlSessionFactoryBean:455 - Registered plugin: 'com.github.pagehelper.PageInterceptor@672872e1'
+2021-07-09 10:49:54,648 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:49:54,826 DEBUG SqlSessionUtils:97 - Creating a new SqlSession
+2021-07-09 10:49:54,837 DEBUG SqlSessionUtils:148 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28dcca0c] was not registered for synchronization because synchronization is not active
+2021-07-09 10:49:54,841 DEBUG SQL_CACHE:60 - Cache Hit Ratio [SQL_CACHE]: 0.0
+2021-07-09 10:49:54,888 DEBUG DataSourceUtils:114 - Fetching JDBC Connection from DataSource
+2021-07-09 10:49:55,051  INFO DruidDataSource:930 - {dataSource-1} inited
+2021-07-09 10:49:55,286 DEBUG SpringManagedTransaction:87 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@452e19ca] will not be managed by Spring
+2021-07-09 10:49:55,295 DEBUG selectUsers_COUNT:143 - ==>  Preparing: SELECT count(0) FROM user 
+2021-07-09 10:49:55,333 DEBUG selectUsers_COUNT:143 - ==> Parameters: 
+2021-07-09 10:49:55,347 DEBUG selectUsers_COUNT:143 - <==      Total: 1
+2021-07-09 10:49:55,349 DEBUG selectUsers:143 - ==>  Preparing: select * from user LIMIT ?, ? 
+2021-07-09 10:49:55,349 DEBUG selectUsers:143 - ==> Parameters: 5(Long), 5(Integer)
+2021-07-09 10:49:55,351 DEBUG selectUsers:143 - <==      Total: 5
+2021-07-09 10:49:55,352 DEBUG SqlSessionUtils:191 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28dcca0c]
+2021-07-09 10:50:29,553 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ec6a292
+2021-07-09 10:50:29,790 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\service\impl\UserServiceImpl.class]
+2021-07-09 10:50:29,813 DEBUG XmlBeanDefinitionReader:395 - Loaded 13 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:50:29,844 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:50:29,892 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:50:29,920 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:50:29,920 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:50:29,922 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:50:29,927 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:50:29,955 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:50:29,955 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:50:29,956 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:50:29,956 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:50:29,958 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:50:29,971 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:50:29,978 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:50:29,985 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:50:29,989 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 10:50:30,033 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:50:30,045 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:50:30,055 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userServiceImpl'
+2021-07-09 10:50:30,071 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:50:30,080 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:50:30,090 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:50:30,091 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:50:30,222 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:50:30,277 DEBUG SqlSessionFactoryBean:455 - Registered plugin: 'com.github.pagehelper.PageInterceptor@672872e1'
+2021-07-09 10:50:30,278 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:50:30,461 DEBUG SqlSessionUtils:97 - Creating a new SqlSession
+2021-07-09 10:50:30,473 DEBUG SqlSessionUtils:148 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28dcca0c] was not registered for synchronization because synchronization is not active
+2021-07-09 10:50:30,478 DEBUG SQL_CACHE:60 - Cache Hit Ratio [SQL_CACHE]: 0.0
+2021-07-09 10:50:30,549 DEBUG DataSourceUtils:114 - Fetching JDBC Connection from DataSource
+2021-07-09 10:50:30,722  INFO DruidDataSource:930 - {dataSource-1} inited
+2021-07-09 10:50:31,009 DEBUG SpringManagedTransaction:87 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@452e19ca] will not be managed by Spring
+2021-07-09 10:50:31,021 DEBUG selectUsers_COUNT:143 - ==>  Preparing: SELECT count(0) FROM user 
+2021-07-09 10:50:31,048 DEBUG selectUsers_COUNT:143 - ==> Parameters: 
+2021-07-09 10:50:31,061 DEBUG selectUsers_COUNT:143 - <==      Total: 1
+2021-07-09 10:50:31,062 DEBUG selectUsers:143 - ==>  Preparing: select * from user LIMIT ?, ? 
+2021-07-09 10:50:31,063 DEBUG selectUsers:143 - ==> Parameters: 5(Long), 5(Integer)
+2021-07-09 10:50:31,065 DEBUG selectUsers:143 - <==      Total: 5
+2021-07-09 10:50:31,066 DEBUG SqlSessionUtils:191 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28dcca0c]
+2021-07-09 10:59:29,391 DEBUG SpringJUnit4ClassRunner:139 - SpringJUnit4ClassRunner constructor called with [class com.shine.TestUser01]
+2021-07-09 10:59:29,401 DEBUG BootstrapUtils:96 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2021-07-09 10:59:29,410 DEBUG BootstrapUtils:79 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2021-07-09 10:59:29,425 DEBUG BootstrapUtils:132 - Instantiating TestContextBootstrapper for test class [com.shine.TestUser01] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2021-07-09 10:59:29,470 DEBUG AbstractDelegatingSmartContextLoader:263 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@51efea79 declaringClass = 'com.shine.TestUser01', classes = '{}', locations = '{classpath:applicationContext-ms.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2021-07-09 10:59:29,500 DEBUG ActiveProfilesUtils:79 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shine.TestUser01]
+2021-07-09 10:59:29,501 DEBUG DefaultTestContextBootstrapper:125 - @TestExecutionListeners is not present for class [com.shine.TestUser01]: using defaults.
+2021-07-09 10:59:29,501  INFO DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-07-09 10:59:29,507 DEBUG DefaultTestContextBootstrapper:192 - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+2021-07-09 10:59:29,515  INFO DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e06451e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59494225, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e1567f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5cb9f472, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cb644e]
+2021-07-09 10:59:29,519 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 10:59:29,523 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 10:59:29,535 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 10:59:29,535 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 10:59:29,536 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 10:59:29,536 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 10:59:29,538 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 10:59:29,538 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 10:59:29,540 DEBUG AbstractDirtiesContextTestExecutionListener:142 - Before test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 10:59:29,541 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 10:59:29,541 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 10:59:29,542 DEBUG DependencyInjectionTestExecutionListener:81 - Performing dependency injection for test context [[DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2021-07-09 10:59:29,543 DEBUG AbstractDelegatingSmartContextLoader:273 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2021-07-09 10:59:29,544 DEBUG AbstractGenericContextLoader:109 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2021-07-09 10:59:29,597 DEBUG StandardEnvironment:252 - Activating profiles []
+2021-07-09 10:59:29,829 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\service\impl\UserServiceImpl.class]
+2021-07-09 10:59:29,851 DEBUG XmlBeanDefinitionReader:395 - Loaded 13 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 10:59:29,851 DEBUG GenericApplicationContext:594 - Refreshing org.springframework.context.support.GenericApplicationContext@79be0360
+2021-07-09 10:59:29,875 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 10:59:29,935 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 10:59:29,965 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 10:59:29,966 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 10:59:29,967 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 10:59:29,970 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 10:59:29,985 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:59:29,985 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:59:29,985 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:59:29,985 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 10:59:29,986 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 10:59:29,988 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 10:59:29,991 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 10:59:29,992 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 10:59:29,996 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 10:59:30,053 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 10:59:30,072 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 10:59:30,087 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userServiceImpl'
+2021-07-09 10:59:30,105 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 10:59:30,115 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 10:59:30,134 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 10:59:30,136 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 10:59:30,313 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 10:59:30,381 DEBUG SqlSessionFactoryBean:455 - Registered plugin: 'com.github.pagehelper.PageInterceptor@3fb1549b'
+2021-07-09 10:59:30,382 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 10:59:30,542 DEBUG DefaultCacheAwareContextLoaderDelegate:119 - Storing ApplicationContext in cache under key [[MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2021-07-09 10:59:30,543 DEBUG cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@14bdbc74 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2021-07-09 10:59:30,551 DEBUG AbstractDirtiesContextTestExecutionListener:107 - Before test method: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = getUser01@TestUser01, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 10:59:30,564 DEBUG SqlSessionUtils:97 - Creating a new SqlSession
+2021-07-09 10:59:30,573 DEBUG SqlSessionUtils:148 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32115b28] was not registered for synchronization because synchronization is not active
+2021-07-09 10:59:30,583 DEBUG DataSourceUtils:114 - Fetching JDBC Connection from DataSource
+2021-07-09 10:59:30,745  INFO DruidDataSource:930 - {dataSource-1} inited
+2021-07-09 10:59:30,952 DEBUG SpringManagedTransaction:87 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@1787bc24] will not be managed by Spring
+2021-07-09 10:59:30,958 DEBUG selectUsers:143 - ==>  Preparing: select * from user 
+2021-07-09 10:59:30,979 DEBUG selectUsers:143 - ==> Parameters: 
+2021-07-09 10:59:30,995 DEBUG selectUsers:143 - <==      Total: 28
+2021-07-09 10:59:30,996 DEBUG SqlSessionUtils:191 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32115b28]
+2021-07-09 10:59:30,998 DEBUG AbstractDirtiesContextTestExecutionListener:107 - After test method: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = getUser01@TestUser01, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 10:59:30,999 DEBUG AbstractDirtiesContextTestExecutionListener:142 - After test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 10:59:31,000 DEBUG GenericApplicationContext:1002 - Closing org.springframework.context.support.GenericApplicationContext@79be0360, started on Fri Jul 09 10:59:29 CST 2021
+2021-07-09 10:59:31,005  INFO DruidDataSource:1825 - {dataSource-1} closed
+2021-07-09 11:01:32,976 DEBUG SpringJUnit4ClassRunner:139 - SpringJUnit4ClassRunner constructor called with [class com.shine.TestUser01]
+2021-07-09 11:01:32,985 DEBUG BootstrapUtils:96 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2021-07-09 11:01:32,997 DEBUG BootstrapUtils:79 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2021-07-09 11:01:33,117 DEBUG BootstrapUtils:132 - Instantiating TestContextBootstrapper for test class [com.shine.TestUser01] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2021-07-09 11:01:33,172 DEBUG AbstractDelegatingSmartContextLoader:263 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@51efea79 declaringClass = 'com.shine.TestUser01', classes = '{}', locations = '{classpath:applicationContext-ms.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2021-07-09 11:19:57,056 DEBUG SpringJUnit4ClassRunner:139 - SpringJUnit4ClassRunner constructor called with [class com.shine.TestUser01]
+2021-07-09 11:19:57,063 DEBUG BootstrapUtils:96 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2021-07-09 11:19:57,073 DEBUG BootstrapUtils:79 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2021-07-09 11:19:57,083 DEBUG BootstrapUtils:132 - Instantiating TestContextBootstrapper for test class [com.shine.TestUser01] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2021-07-09 11:19:57,110 DEBUG AbstractDelegatingSmartContextLoader:263 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@51efea79 declaringClass = 'com.shine.TestUser01', classes = '{}', locations = '{classpath:applicationContext-ms.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2021-07-09 11:19:57,142 DEBUG ActiveProfilesUtils:79 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shine.TestUser01]
+2021-07-09 11:19:57,144 DEBUG DefaultTestContextBootstrapper:125 - @TestExecutionListeners is not present for class [com.shine.TestUser01]: using defaults.
+2021-07-09 11:19:57,145  INFO DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-07-09 11:19:57,150 DEBUG DefaultTestContextBootstrapper:192 - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+2021-07-09 11:19:57,158  INFO DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e06451e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59494225, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e1567f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5cb9f472, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cb644e]
+2021-07-09 11:19:57,160 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:19:57,164 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:19:57,174 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:19:57,174 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:19:57,175 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:19:57,175 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:19:57,177 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:19:57,178 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:19:57,179 DEBUG AbstractDirtiesContextTestExecutionListener:142 - Before test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 11:19:57,180 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:19:57,181 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:19:57,181 DEBUG DependencyInjectionTestExecutionListener:81 - Performing dependency injection for test context [[DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2021-07-09 11:19:57,182 DEBUG AbstractDelegatingSmartContextLoader:273 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2021-07-09 11:19:57,182 DEBUG AbstractGenericContextLoader:109 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2021-07-09 11:19:57,227 DEBUG StandardEnvironment:252 - Activating profiles []
+2021-07-09 11:19:57,467 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\service\impl\UserServiceImpl.class]
+2021-07-09 11:19:57,487 DEBUG XmlBeanDefinitionReader:395 - Loaded 14 bean definitions from class path resource [applicationContext-ms.xml]
+2021-07-09 11:19:57,487 DEBUG GenericApplicationContext:594 - Refreshing org.springframework.context.support.GenericApplicationContext@79be0360
+2021-07-09 11:19:57,528 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-07-09 11:19:57,611 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-07-09 11:19:57,650 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\work\code\Java2103\Day60\target\classes\com\shine\dao\UserDao.class]
+2021-07-09 11:19:57,650 DEBUG ClassPathMapperScanner:180 - Creating MapperFactoryBean with name 'userDao' and 'com.shine.dao.UserDao' mapperInterface
+2021-07-09 11:19:57,651 DEBUG ClassPathMapperScanner:216 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2021-07-09 11:19:57,655 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-07-09 11:19:57,675 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2021-07-09 11:19:57,677 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-07-09 11:19:57,677 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-07-09 11:19:57,678 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-07-09 11:19:57,679 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-07-09 11:19:57,682 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-07-09 11:19:57,685 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-07-09 11:19:57,686 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-07-09 11:19:57,690 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-07-09 11:19:57,746 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'com.shine.processor.MyBeanPostProcessor#0'
+2021-07-09 11:19:57,765 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'user'
+2021-07-09 11:19:57,780 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userServiceImpl'
+2021-07-09 11:19:57,797 DEBUG LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-09 11:19:57,807 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'userDao'
+2021-07-09 11:19:57,828 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-07-09 11:19:57,841 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+2021-07-09 11:19:58,053 DEBUG SqlSessionFactoryBean:410 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-07-09 11:19:58,114 DEBUG SqlSessionFactoryBean:455 - Registered plugin: 'com.github.pagehelper.PageInterceptor@429bffaa'
+2021-07-09 11:19:58,116 DEBUG SqlSessionFactoryBean:534 - Property 'mapperLocations' was not specified or no matching resources found
+2021-07-09 11:19:58,277 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'tx'
+2021-07-09 11:19:58,328 DEBUG DefaultCacheAwareContextLoaderDelegate:119 - Storing ApplicationContext in cache under key [[MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2021-07-09 11:19:58,329 DEBUG cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@415b0b49 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2021-07-09 11:19:58,347 DEBUG AbstractDirtiesContextTestExecutionListener:107 - Before test method: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = getUser02@TestUser01, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 11:19:58,361 DEBUG SqlSessionUtils:97 - Creating a new SqlSession
+2021-07-09 11:19:58,369 DEBUG SqlSessionUtils:148 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@776a6d9b] was not registered for synchronization because synchronization is not active
+2021-07-09 11:19:58,377 DEBUG DataSourceUtils:114 - Fetching JDBC Connection from DataSource
+2021-07-09 11:19:58,511  INFO DruidDataSource:930 - {dataSource-1} inited
+2021-07-09 11:19:58,789 DEBUG SpringManagedTransaction:87 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@16aa8654] will not be managed by Spring
+2021-07-09 11:19:58,795 DEBUG deleteUser:143 - ==>  Preparing: delete from user where id=? 
+2021-07-09 11:19:58,818 DEBUG deleteUser:143 - ==> Parameters: 6(Integer)
+2021-07-09 11:19:58,822 DEBUG deleteUser:143 - <==    Updates: 1
+2021-07-09 11:19:58,823 DEBUG SqlSessionUtils:191 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@776a6d9b]
+2021-07-09 11:19:58,826 DEBUG AbstractDirtiesContextTestExecutionListener:107 - After test method: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = getUser02@TestUser01, testException = java.lang.ArithmeticException: / by zero, mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 11:19:58,832 DEBUG AbstractDirtiesContextTestExecutionListener:142 - After test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 11:19:58,835 DEBUG GenericApplicationContext:1002 - Closing org.springframework.context.support.GenericApplicationContext@79be0360, started on Fri Jul 09 11:19:57 CST 2021
+2021-07-09 11:19:58,842  INFO DruidDataSource:1825 - {dataSource-1} closed
+2021-07-09 11:26:10,211 DEBUG SpringJUnit4ClassRunner:139 - SpringJUnit4ClassRunner constructor called with [class com.shine.TestUser01]
+2021-07-09 11:26:10,216 DEBUG BootstrapUtils:96 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2021-07-09 11:26:10,226 DEBUG BootstrapUtils:79 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2021-07-09 11:26:10,240 DEBUG BootstrapUtils:132 - Instantiating TestContextBootstrapper for test class [com.shine.TestUser01] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2021-07-09 11:26:10,267 DEBUG AbstractDelegatingSmartContextLoader:263 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@51efea79 declaringClass = 'com.shine.TestUser01', classes = '{}', locations = '{classpath:applicationContext-ms.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2021-07-09 11:26:10,288 DEBUG ActiveProfilesUtils:79 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shine.TestUser01]
+2021-07-09 11:26:10,289 DEBUG DefaultTestContextBootstrapper:125 - @TestExecutionListeners is not present for class [com.shine.TestUser01]: using defaults.
+2021-07-09 11:26:10,290  INFO DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-07-09 11:26:10,293 DEBUG DefaultTestContextBootstrapper:192 - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+2021-07-09 11:26:10,300  INFO DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e06451e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59494225, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e1567f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5cb9f472, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cb644e]
+2021-07-09 11:26:10,301 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:26:10,305 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:26:10,314 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:26:10,315 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:26:10,316 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:26:10,316 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:26:10,317 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:26:10,318 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:26:10,319 DEBUG AbstractDirtiesContextTestExecutionListener:142 - Before test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 11:26:10,320 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:26:10,321 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:26:10,325 DEBUG DependencyInjectionTestExecutionListener:81 - Performing dependency injection for test context [[DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2021-07-09 11:26:10,326 DEBUG AbstractDelegatingSmartContextLoader:273 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2021-07-09 11:26:10,327 DEBUG AbstractGenericContextLoader:109 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2021-07-09 11:26:10,367 DEBUG StandardEnvironment:252 - Activating profiles []
+2021-07-09 11:26:10,606 ERROR TestContextManager:250 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59494225] to prepare test instance [com.shine.TestUser01@6536e911]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 41 in XML document from class path resource [applicationContext-ms.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 41; columnNumber: 72; cvc-complex-type.3.2.2: 元素 'tx:advice' 中不允许出现属性 'transaction-manager'。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:404)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 41; columnNumber: 72; cvc-complex-type.3.2.2: 元素 'tx:advice' 中不允许出现属性 'transaction-manager'。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:453)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3231)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processAttributes(XMLSchemaValidator.java:2708)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:2051)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:741)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:77)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:434)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 37 more
+2021-07-09 11:26:10,615 DEBUG AbstractDirtiesContextTestExecutionListener:142 - After test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 11:27:08,504 DEBUG SpringJUnit4ClassRunner:139 - SpringJUnit4ClassRunner constructor called with [class com.shine.TestUser01]
+2021-07-09 11:27:08,510 DEBUG BootstrapUtils:96 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2021-07-09 11:27:08,522 DEBUG BootstrapUtils:79 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2021-07-09 11:27:08,544 DEBUG BootstrapUtils:132 - Instantiating TestContextBootstrapper for test class [com.shine.TestUser01] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2021-07-09 11:27:08,594 DEBUG AbstractDelegatingSmartContextLoader:263 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@51efea79 declaringClass = 'com.shine.TestUser01', classes = '{}', locations = '{classpath:applicationContext-ms.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2021-07-09 11:27:08,630 DEBUG ActiveProfilesUtils:79 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shine.TestUser01]
+2021-07-09 11:27:08,635 DEBUG DefaultTestContextBootstrapper:125 - @TestExecutionListeners is not present for class [com.shine.TestUser01]: using defaults.
+2021-07-09 11:27:08,636  INFO DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-07-09 11:27:08,646 DEBUG DefaultTestContextBootstrapper:192 - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+2021-07-09 11:27:08,659  INFO DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e06451e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59494225, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e1567f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5cb9f472, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cb644e]
+2021-07-09 11:27:08,663 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:27:08,668 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:27:08,682 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:27:08,683 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:27:08,685 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:27:08,685 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:27:08,687 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:27:08,688 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:27:08,690 DEBUG AbstractDirtiesContextTestExecutionListener:142 - Before test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2021-07-09 11:27:08,691 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shine.TestUser01]
+2021-07-09 11:27:08,692 DEBUG ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shine.TestUser01]
+2021-07-09 11:27:08,694 DEBUG DependencyInjectionTestExecutionListener:81 - Performing dependency injection for test context [[DefaultTestContext@2286778 testClass = TestUser01, testInstance = com.shine.TestUser01@6536e911, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2021-07-09 11:27:08,697 DEBUG AbstractDelegatingSmartContextLoader:273 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2021-07-09 11:27:08,699 DEBUG AbstractGenericContextLoader:109 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2021-07-09 11:27:08,764 DEBUG StandardEnvironment:252 - Activating profiles []
+2021-07-09 11:27:08,975 ERROR TestContextManager:250 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59494225] to prepare test instance [com.shine.TestUser01@6536e911]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 41 in XML document from class path resource [applicationContext-ms.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 41; columnNumber: 56; cvc-complex-type.3.2.2: 元素 'tx:advice' 中不允许出现属性 'transaction-manager'。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:404)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 41; columnNumber: 56; cvc-complex-type.3.2.2: 元素 'tx:advice' 中不允许出现属性 'transaction-manager'。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:453)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3231)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processAttributes(XMLSchemaValidator.java:2708)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:2051)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:741)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:77)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:434)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 37 more
+2021-07-09 11:27:08,991 DEBUG AbstractDirtiesContextTestExecutionListener:142 - After test class: context [DefaultTestContext@2286778 testClass = TestUser01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4e9ba398 testClass = TestUser01, locations = '{classpath:applicationContext-ms.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].

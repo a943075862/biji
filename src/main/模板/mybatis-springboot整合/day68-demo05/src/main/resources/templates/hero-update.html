@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>update</title>
+</head>
+<body>
+    <form action="/hero/update" method="post">
+        <input th:value="${hero.id}" name="id" type="hidden"/><br>
+        姓名：<input th:value="${hero.name}" name="name" type="text"/><br>
+        武力值：<input th:value="${hero.forceValue}" name="forceValue" type="text"/><br>
+        地址：<input th:value="${hero.addr}" name="addr" type="text"/><br>
+        信息：<input th:value="${hero.info}" name="info" type="text"/><br>
+        <button type="submit">提交</button>
+
+
+
+    </form>
+</body>
+</html>

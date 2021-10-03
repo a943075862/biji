@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>行号</th>
+            <th>id</th>
+            <th>姓名</th>
+            <th>武力值</th>
+            <th>地址</th>
+            <th>信息</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="hero,heroState:${heros}">
+            <td th:text="${heroState.index+1}"></td>
+            <td th:text="${hero.id}"></td>
+            <td th:text="${hero.name}"></td>
+            <td th:text="${hero.forceValue}"></td>
+            <td th:text="${hero.addr}"></td>
+            <td th:text="${hero.info}"></td>
+            <td>
+                <a th:href="|del?id=${hero.id}|">删除</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

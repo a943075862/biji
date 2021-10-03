@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: eureka-zuul
+  redis:
+    host: 192.168.85.132
+    password: 123456
+server:
+  port: 8766
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    # ribbon 对应的业务
+    eureka-consumer:
+      # 路径
+      path: /api/ribbon/**
+      # 服务名
+      serviceId: WORKER-CONSUMER
+      # 剥离前缀，如果是false，前缀/ribbon在目标的服务的路径中是真实存在的。
+     # strip-prefix: false
+    # feign 的对应的业务
+    eureka-consumer-feign:
+      # 路径
+      path: /api/feign/**
+      # 服务名
+      serviceId: WORKER-CONSUMER-FEIGN
+    # 统一前缀的配置
+    #prefix: /api
+    #strip-prefix: false
+      # 保护敏感路径：所有只要包含/admin/路径的访问都会被拒绝，在业务场景中 admin 的访问应该属于内部管理员访问的路径
+  ignored-patterns: /**/admin/**
+      # 敏感头：设置敏感头集合为空的
+  sensitive-headers:
+# ribbon的超时配置
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+
+
+

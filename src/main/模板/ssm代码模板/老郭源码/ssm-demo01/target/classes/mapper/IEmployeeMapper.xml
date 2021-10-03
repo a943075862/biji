@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.java2102.ssm.mapper.IEmployeeMapper">
+
+    <resultMap id="BaseResultMap" type="com.qf.java2102.ssm.pojo.Employee">
+        <id column="id" property="id"/>
+        <result column="emp_name" property="empName"/>
+        <result column="salary" property="salary"/>
+        <result column="dept_id" property="deptId"/>
+    </resultMap>
+
+    <resultMap id="empAndDeptResultMap" type="com.qf.java2102.ssm.pojo.Employee" extends="BaseResultMap">
+        <association property="department" javaType="com.qf.java2102.ssm.pojo.Department">
+            <id column="did" property="id"/>
+            <result column="dept_name" property="deptName"/>
+        </association>
+    </resultMap>
+
+    <!-- List<Employee> findAllAndDept(); -->
+    <select id="findAllAndDept" resultMap="empAndDeptResultMap">
+        SELECT
+            e.`id`,
+            e.`emp_name`,
+            e.`salary`,
+            e.`dept_id`,
+            d.`id` did,
+            d.`dept_name`
+        FROM
+        `t_employee` e
+        INNER JOIN `t_department` d
+        ON e.`dept_id` = d.`id`
+    </select>
+
+
+    <!-- void deleteById(Long id); -->
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM `t_employee` WHERE `id` = #{id}
+    </delete>
+
+    <!-- void save(Employee employee); -->
+    <insert id="save" parameterType="Employee">
+        INSERT INTO t_employee (emp_name, salary, dept_id)
+        VALUES (#{empName}, #{salary}, #{deptId})
+    </insert>
+
+    <!-- Employee findById(Long id); -->
+    <select id="findById" parameterType="long" resultMap="BaseResultMap">
+        SELECT
+            e.`id`,
+            e.`emp_name`,
+            e.`salary`,
+            e.`dept_id`
+        FROM
+            `t_employee` e
+        WHERE id = #{id}
+    </select>
+
+
+    <!-- void edit(Employee employee); -->
+    <update id="edit" parameterType="Employee">
+        UPDATE t_employee
+        SET
+            emp_name = #{empName},
+            salary = #{salary},
+            dept_id = #{deptId}
+        WHERE id = #{id}
+    </update>
+</mapper>

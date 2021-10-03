@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qf.dao.HeroDao">
+<!--    Integer insertHero(Hero hero);-->
+    <insert id="insertHero" parameterType="com.qf.pojo.Hero">
+        insert into hero (name,forceValue,addr,info) values (#{name},#{forceValue},#{addr},#{info})
+    </insert>
+<!--    Integer deleteHero(Integer id);-->
+    <delete id="deleteHero" >
+        delete from  hero where id=#{id}
+    </delete>
+<!--     Integer updateHero(Hero hero);-->
+    <update id="updateHero" parameterType="com.qf.pojo.Hero">
+        update hero set name=#{name},forcevalue=${forceValue},addr=#{addr},info=#{info} where id=#{id}
+    </update>
+<!--  Hero selectHeroById(Integer id);-->
+    <select id="selectHeroById" parameterType="integer" resultType="com.qf.pojo.Hero">
+        select * from hero where id=#{id}
+    </select>
+<!--     List<Hero> selectHeros();-->
+    <select id="selectHeros" resultType="com.qf.pojo.Hero">
+        select * from hero
+    </select>
+
+
+</mapper>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>hero</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+<body link="black">
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="text-align: center"><h1 style="text-align: center" >英雄榜</h1></div>
+    <div class="col-md-4"></div>
+</div>
+<div class="row">
+    <div class="col-md-3" style="text-align: right">
+        <button type="button" class="btn btn-primary" onclick="saveHero()" style="text-align: center">增加</button>
+    </div>
+</div>
+<div class="container">
+    <table border="1px" class="table table-hover">
+        <tr>
+            <th>行数</th>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>武力值</th>
+            <th>地址</th>
+            <th>信息</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="hero,heroState:${heros}">
+            <td th:text="${heroState.index+1}"></td>
+            <td th:text="${hero.id}"></td>
+            <td th:text="${hero.name}"></td>
+            <td th:text="${hero.forceValue}"></td>
+            <td th:text="${hero.addr}"></td>
+            <td th:text="${hero.info}"></td>
+            <td>
+                <a th:href="@{showById(id=${hero.id})}"  class="btn btn-primary">修改</a>
+                <a th:href="@{delete(id=${hero.id})}" class="btn btn-danger">删除</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-2">
+        共 <span th:text="${pageInfo.getPages()}"></span> 页
+
+    </div>
+    <div class="col-md-2">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                <span th:if="${pageInfo.hasPreviousPage}"><a th:href="@{/hero/show(pageNum=${pageInfo.pageNum}-1)} "  aria-label="Previous"> <span aria-hidden="true">&laquo;</span></a> </span>
+                </li>
+                <li th:each="pagenum:${pageInfo.navigatepageNums}">
+                    <a th:href="@{/hero/show(pageNum=${pagenum})}">
+                        <div th:text="${pagenum}"></div>
+                    </a>
+                </li>
+                <li>
+                <span th:if="${pageInfo.hasNextPage}"><a th:href="@{/hero/show(pageNum=${pageInfo.pageNum}+1)}" aria-label="Previous"> <span aria-hidden="true">&raquo;</span></a> </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="col-md-2">
+        当前第 <span th:text="${pageInfo.pageNum}"></span> 页
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</body>
+<script th:inline="javascript">
+    function saveHero() {
+        location.href = "/hero/insert-show";
+        // location.href="hero-insert.html";
+    }
+
+</script>
+</html>

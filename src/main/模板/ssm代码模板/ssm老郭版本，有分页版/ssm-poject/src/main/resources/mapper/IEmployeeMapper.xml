@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--映射mapper层   dao层-->
+<mapper namespace="com.qf.java2103.ssm.mapper.IEmployeeMapper">
+<!--   结果集类型-->
+    <resultMap id="BaseResultMap" type="com.qf.java2103.ssm.pojo.Employee">
+        <id column="id" property="id"></id>
+        <result column="emp_name" property="empName"/>
+        <result column="salary" property="salary"/>
+        <result column="dept_id" property="deptId"/>
+    </resultMap>
+    <resultMap id="empAndDeptResultMap" type="com.qf.java2103.ssm.pojo.Employee" extends="BaseResultMap">
+        <association property="department" javaType="com.qf.java2103.ssm.pojo.Department">
+            <id column="did" property="id"/>
+            <result column="dept_name" property="deptName"/>
+        </association>
+    </resultMap>
+    <!-- List<Employee> findAllEmployeeAndDept();-->
+    <select id="findAllEmployeeAndDept" resultMap="empAndDeptResultMap" parameterType="integer">
+        SELECT employee.id,employee.emp_name,employee.salary,employee.dept_id,department.id did,department.dept_name FROM employee INNER JOIN department WHERE employee.dept_id=department.id  AND employee.id
+    </select>
+    <!--//通过id删除员工
+    void deleteById(integer id);-->
+    <delete id="deleteById" parameterType="integer">
+        DELETE FROM employee WHERE employee.id=#{id}
+    </delete>
+
+  <!--  //添加员工
+    void insertEmployee(Employee employee);-->
+<!--    #{属性值}  不能以类.属性值  会报没有get方法-->
+    <insert id="insertEmployee" parameterType="com.qf.java2103.ssm.pojo.Employee">
+        INSERT INTO employee(employee.emp_name,employee.salary,employee.dept_id) VALUES (#{empName},#{salary},#{deptId})
+    </insert>
+<!--    //通过id查询员工
+    Employee findEmployeeById(Integer id);-->
+    <select id="findEmployeeById" parameterType="integer" resultMap="empAndDeptResultMap">
+        SELECT employee.id,employee.emp_name,employee.salary,employee.dept_id FROM employee WHERE employee.id=#{id}
+    </select>
+  <!--  //修改员工信息
+    void updateEmployee(Employee employee);-->
+    <update id="updateEmployee" parameterType="com.qf.java2103.ssm.pojo.Employee">
+        UPDATE employee SET employee.emp_name=#{empName},employee.salary=#{salary},employee.dept_id=#{deptId} WHERE employee.id=#{id}
+    </update>
+
+
+
+</mapper>

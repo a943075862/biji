@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<form action="http://localhost:8080/day64/checkCaptcha/check01" method="get">
+    <img id="capImg" src="http://localhost:8080/day64/captcha" onclick="refresh()">
+    <hr>
+    <input type="text" name="captcha">
+    <hr>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+<script type="text/javascript">
+    function refresh() {
+        var capImg=document.getElementById("capImg")
+        capImg.src="http://localhost:8080/day64/captcha?"+new Date();
+    }
+</script>
+</html>

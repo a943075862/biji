@@ -1,0 +1,9 @@
+dubbo:
+  application:
+    name: view-web
+  registry:
+    address: zookeeper://192.168.85.132:2181
+
+server:
+  port: 8090
+

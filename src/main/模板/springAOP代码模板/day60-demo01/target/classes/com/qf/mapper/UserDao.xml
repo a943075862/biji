@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qf.mapper.UserDao">
+<!--    public Integer insertUser(User user);
+
+    public Integer deleteUser(Integer id);
+
+    public Integer updateUser(User user);
+
+    public User selectUser(Integer id);
+
+    public List<User> selectAllUser();-->
+    <!--<select id="selectUser" resultType="com.qf.pojo.User">
+        select * from users where id = #{id}
+    </select>
+    <select id="selectAllUser" resultType="com.qf.pojo.User">
+        select * from users
+    </select>
+    <insert id="insertUser" parameterType="com.qf.pojo.User">
+        INSERT INTO users(users.username,users.`password`,users.nickname) VALUES (#{username},#{password},#{nickname})
+    </insert>
+    <delete id="deleteUser" parameterType="int">
+        delete from users where id=#{id}
+    </delete>-->
+
+</mapper>

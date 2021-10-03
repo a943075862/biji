@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--映射mapper层   dao层-->
+<mapper namespace="com.qf.java2103.ssm.mapper.IDepartmentMapper">
+<!--    结果类-->
+    <resultMap id="departmentResulitMap" type="com.qf.java2103.ssm.pojo.Department">
+        <id column="id" property="id"/>
+        <result column="dept_name" property="deptName"/>
+    </resultMap>
+<!--    //查询所有部门
+    List<Department> findAllDepartment();-->
+    <select id="findAllDepartment" resultMap="departmentResulitMap">
+        SELECT department.id,department.dept_name FROM department
+    </select>
+
+
+</mapper>
