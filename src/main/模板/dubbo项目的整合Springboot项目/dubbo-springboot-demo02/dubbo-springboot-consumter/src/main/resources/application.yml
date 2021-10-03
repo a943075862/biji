@@ -1,0 +1,7 @@
+server:
+  port: 8001
+dubbo:
+  application:
+    name: dubbo-springboot-consumter
+  registry:
+    address: zookeeper://192.168.85.132:2181
